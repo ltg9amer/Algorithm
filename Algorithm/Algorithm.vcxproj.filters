@@ -90,5 +90,11 @@
     <ClCompile Include="BaekjoonOnlineJudge_1764.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_10815.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="프로그래머스_중복된 문자 제거.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

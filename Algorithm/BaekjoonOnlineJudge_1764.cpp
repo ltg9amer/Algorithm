@@ -1,6 +1,5 @@
 #include <iostream>
-#include <queue>
-#include <unordered_map>
+#include <set>
 
 using namespace std;
 
@@ -9,8 +8,8 @@ int main() {
 	cin.tie(nullptr);
 	cout.tie(nullptr);
 
-	unordered_map<string, int> neverListeners;
-	priority_queue<string, vector<string>, greater<string>> neverViewers;
+	set<string> neverListeners;
+	set<string> neverViewers;
 	string name;
 	int n, m, cnt = 0;
 
@@ -19,14 +18,14 @@ int main() {
 	while (n--) {
 		cin >> name;
 
-		neverListeners[name]++;
+		neverListeners.insert(name);
 	}
 
 	while (m--) {
 		cin >> name;
 
-		if (neverListeners[name]) {
-			neverViewers.push(name);
+		if (neverListeners.find(name) != neverListeners.end()) {
+			neverViewers.insert(name);
 
 			cnt++;
 		}
@@ -35,8 +34,8 @@ int main() {
 	cout << cnt << '\n';
 
 	while (cnt--) {
-		cout << neverViewers.top() << '\n';
+		cout << *neverViewers.begin() << '\n';
 
-		neverViewers.pop();
+		neverViewers.erase(*neverViewers.begin());
 	}
 }
