@@ -13,7 +13,7 @@ int main() {
 
 	cin >> n;
 
-	for (int i = 0; i < n; i++) {
+	for (int i = 0; i < n; ++i) {
 		cin >> m;
 
 		cards.insert(m);
@@ -21,7 +21,8 @@ int main() {
 
 	cin >> m;
 
-	for (int i = 0; i < m; i++) {
+	for (int i = 0; i < m; ++i) {
 		cin >> n;
 		cout << (*cards.lower_bound(n) == n) << ' ';
 	}
+}

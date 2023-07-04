@@ -9,7 +9,7 @@ int main() {
 
 	cin >> n;
 
-	for (int i = 0; i < n; i++) {
+	for (int i = 0; i < n; ++i) {
 		unordered_map<char, bool> useWords;
 
 		cin >> input;
