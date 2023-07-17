@@ -154,5 +154,23 @@
     <ClCompile Include="BaekjoonOnlineJudge_1032.cpp">
       <Filter>BaekjoonOnlineJudge</Filter>
     </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1037.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1075.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1076.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1085.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1100.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1110.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
