@@ -4,7 +4,16 @@
 
 using namespace std;
 
-bool compare(const string&, const string&);
+bool compare(const string& fWord, const string& sWord) {
+	if (fWord.size() < sWord.size()) {
+		return true;
+	}
+	else if (fWord.size() == sWord.size() && fWord < sWord) {
+		return true;
+	}
+
+	return false;
+}
 
 int main() {
 	int n;
@@ -23,15 +32,4 @@ int main() {
 	for (auto word : words) {
 		cout << word << '\n';
 	}
-}
-
-bool compare(const string& fWord, const string& sWord) {
-	if (fWord.size() < sWord.size()) {
-		return true;
-	}
-	else if (fWord.size() == sWord.size() && fWord < sWord) {
-		return true;
-	}
-
-	return false;
 }

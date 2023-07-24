@@ -172,5 +172,59 @@
     <ClCompile Include="BaekjoonOnlineJudge_1110.cpp">
       <Filter>BaekjoonOnlineJudge</Filter>
     </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1152.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1157.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1181.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1193.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_11003.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_5430.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2666.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2447.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_25381.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_21942.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_12015.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1918.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1655.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1300.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1135.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1546.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2720.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2839.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -3,18 +3,20 @@
 
 using namespace std;
 
-bool check_can_attack(int row, vector<int>& board) {
+vector<int> board;
+int n, caseCnt;
 
+bool is_attacked(int row) {
 	for (int newRow = 0; newRow < row; ++newRow) {
 		if (board[row] == board[newRow] || abs(board[row] - board[newRow]) == row - newRow) {
-			return false;
+			return true;
 		}
 	}
 
-	return true;
+	return false;
 }
 
-void count_case(int row, int n, vector<int>& board, int& caseCnt) {
+void count_case(int row) {
 	if (row >= n) {
 		++caseCnt;
 
@@ -24,20 +26,18 @@ void count_case(int row, int n, vector<int>& board, int& caseCnt) {
 	for (int col = 0; col < n; ++col) {
 		board[row] = col;
 
-		if (check_can_attack(row, board)) {
-			count_case(row + 1, n, board, caseCnt);
+		if (!is_attacked(row)) {
+			count_case(row + 1);
 		}
 	}
 }
 
 int main() {
-	int n, caseCnt = 0;
-
 	cin >> n;
 
-	vector<int> board(n);
+	board.resize(n);
 
-	count_case(0, n, board, caseCnt);
+	count_case(0);
 
 	cout << caseCnt;
 }

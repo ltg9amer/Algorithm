@@ -4,7 +4,9 @@
 
 using namespace std;
 
-bool compare(const pair<int, string>&, const pair<int, string>&);
+bool compare(const pair<int, string>& fMember, const pair<int, string>& sMember) {
+	return fMember.first < sMember.first;
+}
 
 int main() {
 	int n;
@@ -22,8 +24,4 @@ int main() {
 	for (auto member : members) {
 		cout << member.first << ' ' << member.second << '\n';
 	}
-}
-
-bool compare(const pair<int, string>& fMember, const pair<int, string>& sMember) {
-	return fMember.first < sMember.first;
 }
