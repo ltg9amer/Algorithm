@@ -3,7 +3,11 @@
 
 using namespace std;
 
-void dfs(const int& cur, const int& n, const int& m, const int& first, vector<bool>& vstd, vector<int>& seq) {
+vector<bool> visited;
+vector<int> seq;
+int n, m;
+
+void dfs(int cur, int first) {
 	if (cur == m) {
 		for (int i = 0; i < m; ++i) {
 			cout << seq[i] << ' ';
@@ -13,25 +17,22 @@ void dfs(const int& cur, const int& n, const int& m, const int& first, vector<bo
 	}
 	else {
 		for (int i = first; i < n; ++i) {
-			if (!vstd[i]) {
-				vstd[i] = true;
+			if (!visited[i]) {
+				visited[i] = true;
 				seq[cur] = i + 1;
 
-				dfs(cur + 1, n, m, i, vstd, seq);
+				dfs(cur + 1, i);
 
-				vstd[i] = false;
+				visited[i] = false;
 			}
 		}
 	}
 }
 
 int main() {
-	int n, m;
-
 	cin >> n >> m;
 
-	vector<bool> vstd(n);
-	vector<int> seq(n);
-
-	dfs(0, n, m, 0, vstd, seq);
+	visited.resize(n);
+	seq.resize(n);
+	dfs(0, 0);
 }
