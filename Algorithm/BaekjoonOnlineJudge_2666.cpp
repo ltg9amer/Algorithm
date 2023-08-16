@@ -1,8 +1,9 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-int useCloset[20];
+vector<int> useCloset(20);
 int n, fBlank, sBlank, useAmount, minCnt = 10000;
 
 void closet(int fBlank, int sBlank, int nowUse, int cnt) {

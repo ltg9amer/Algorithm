@@ -11,13 +11,13 @@ int main() {
 
 	vector<int> nums(n);
 
-	for (auto& num : nums) {
-		cin >> num;
+	for (auto& word : nums) {
+		cin >> word;
 	}
 
 	sort(nums.begin(), nums.end());
 
-	for (auto num : nums) {
-		cout << num << '\n';
+	for (auto word : nums) {
+		cout << word << '\n';
 	}
 }

@@ -7,23 +7,23 @@ using namespace std;
 int main() {
 	vector<char> signs;
 	stack<int> stack;
-	int n, num, cnt = 0;
+	int n, word, cnt = 0;
 
 	cin >> n;
 
 	for (int i = 0; i < n; ++i) {
-		cin >> num;
+		cin >> word;
 
-		while (cnt < num) {
+		while (cnt < word) {
 			stack.push(++cnt);
 			signs.push_back('+');
 		}
 
-		if (stack.top() == num) {
+		if (stack.top() == word) {
 			stack.pop();
 			signs.push_back('-');
 		}
-		else if (stack.top() > num) {
+		else if (stack.top() > word) {
 			cout << "NO";
 
 			return 0;

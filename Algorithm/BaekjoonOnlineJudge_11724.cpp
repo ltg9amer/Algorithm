@@ -6,14 +6,14 @@ using namespace std;
 vector<vector<int>> graph;
 vector<bool> visited;
 
-void dfs(int cur) {
+void back_tracking(int cur) {
 	visited[cur] = true;
 
 	for (int i = 0; i < graph[cur].size(); ++i) {
 		int next = graph[cur][i];
 
 		if (!visited[next]) {
-			dfs(next);
+			back_tracking(next);
 		}
 	}
 }
@@ -36,7 +36,7 @@ int main() {
 	for (int i = 1; i <= n; ++i) {
 		if (!visited[i]) {
 			ccCnt++;
-			dfs(i);
+			back_tracking(i);
 		}
 	}
 

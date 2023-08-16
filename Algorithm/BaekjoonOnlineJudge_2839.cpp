@@ -4,19 +4,19 @@
 using namespace std;
 
 int main() {
-	int n, num, cnt = 0;
+	int n, word, cnt = 0;
 
 	cin >> n;
 
 	while (true) {
-		num = n - 3 * cnt;
+		word = n - 3 * cnt;
 
-		if (!(num % 5)) {
-			cnt = cnt + num / 5;
+		if (!(word % 5)) {
+			cnt = cnt + word / 5;
 
 			break;
 		}
-		else if (num < 0) {
+		else if (word < 0) {
 			cnt = -1;
 
 			break;

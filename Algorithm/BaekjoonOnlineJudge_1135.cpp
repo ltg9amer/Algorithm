@@ -6,12 +6,12 @@ using namespace std;
 
 vector<vector<int>> orgChart;
 
-int dfs(int curEmp) {
+int back_tracking(int curEmp) {
 	vector<int> reqTimes;
 	int underCnt = orgChart[curEmp].size(), minReqTime = 0;
 
 	for (int under : orgChart[curEmp]) {
-		reqTimes.push_back(dfs(under));
+		reqTimes.push_back(back_tracking(under));
 	}
 
 	sort(reqTimes.begin(), reqTimes.end());
@@ -40,5 +40,5 @@ int main() {
 		orgChart[boss].push_back(i);
 	}
 
-	cout << dfs(0);
+	cout << back_tracking(0);
 }

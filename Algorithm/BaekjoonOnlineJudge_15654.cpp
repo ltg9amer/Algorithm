@@ -1,9 +1,11 @@
+#include <algorithm>
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
-vector<int> seq;
+vector<bool> visited;
+vector<int> nums, seq;
 int n, m;
 
 void back_tracking(int curNode) {
@@ -16,9 +18,14 @@ void back_tracking(int curNode) {
 	}
 	else {
 		for (int i = 0; i < n; ++i) {
-			seq[curNode] = i + 1;
+			if (!visited[i]) {
+				visited[i] = true;
+				seq[curNode] = nums[i];
 
-			back_tracking(curNode + 1);
+				back_tracking(curNode + 1);
+
+				visited[i] = false;
+			}
 		}
 	}
 }
@@ -26,6 +33,14 @@ void back_tracking(int curNode) {
 int main() {
 	cin >> n >> m;
 
+	visited.resize(n);
+	nums.resize(n);
 	seq.resize(n);
+
+	for (int i = 0; i < n; ++i) {
+		cin >> nums[i];
+	}
+
+	sort(nums.begin(), nums.end());
 	back_tracking(0);
 }

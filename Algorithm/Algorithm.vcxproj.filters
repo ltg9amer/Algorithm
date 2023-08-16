@@ -8,6 +8,9 @@
     <Filter Include="프로그래머스">
       <UniqueIdentifier>{28d38c5e-6c3b-467d-b78f-4187d66af4fc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="NYPC">
+      <UniqueIdentifier>{da005382-9f19-4228-b92b-500b32be543a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BaekjoonOnlineJudge_3986.cpp">
@@ -239,6 +242,189 @@
       <Filter>BaekjoonOnlineJudge</Filter>
     </ClCompile>
     <ClCompile Include="BaekjoonOnlineJudge_11724.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_13909.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_22251.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1026.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_16435.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_16499.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1094.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_5585.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2992.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2239.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_3017.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_15654.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_15655.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_15656.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_15657.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_15663.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2747.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2748.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_11052.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2580.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2252.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1003.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_15664.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_15665.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_15666.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2242.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="NYPC_2023_Round_1_1.cpp">
+      <Filter>NYPC</Filter>
+    </ClCompile>
+    <ClCompile Include="NYPC_2023_Round_1_3.cpp">
+      <Filter>NYPC</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_18352.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1753.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_11657.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_11404.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_11403.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1057.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1092.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_18511.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1717.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1922.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1197.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1647.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="프로그래머스_OX퀴즈.cpp">
+      <Filter>프로그래머스</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2485.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1940.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2475.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2741.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2577.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2920.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_8958.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_10250.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_10699.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2420.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_10171.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_10172.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_25083.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2744.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2754.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_15964.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_4153.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2609.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_10988.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_1259.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_18258.cpp">
       <Filter>BaekjoonOnlineJudge</Filter>
     </ClCompile>
   </ItemGroup>

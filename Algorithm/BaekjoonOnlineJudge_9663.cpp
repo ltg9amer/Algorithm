@@ -6,7 +6,7 @@ using namespace std;
 vector<int> board;
 int n, caseCnt;
 
-bool is_attacked(int row) {
+bool can_attacked(int row) {
 	for (int newRow = 0; newRow < row; ++newRow) {
 		if (board[row] == board[newRow] || abs(board[row] - board[newRow]) == row - newRow) {
 			return true;
@@ -16,7 +16,7 @@ bool is_attacked(int row) {
 	return false;
 }
 
-void count_case(int row) {
+void back_tracking(int row) {
 	if (row >= n) {
 		++caseCnt;
 
@@ -26,8 +26,8 @@ void count_case(int row) {
 	for (int col = 0; col < n; ++col) {
 		board[row] = col;
 
-		if (!is_attacked(row)) {
-			count_case(row + 1);
+		if (!can_attacked(row)) {
+			back_tracking(row + 1);
 		}
 	}
 }
@@ -36,8 +36,7 @@ int main() {
 	cin >> n;
 
 	board.resize(n);
-
-	count_case(0);
+	back_tracking(0);
 
 	cout << caseCnt;
 }
