@@ -8,9 +8,6 @@
     <Filter Include="프로그래머스">
       <UniqueIdentifier>{28d38c5e-6c3b-467d-b78f-4187d66af4fc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="NYPC">
-      <UniqueIdentifier>{da005382-9f19-4228-b92b-500b32be543a}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BaekjoonOnlineJudge_3986.cpp">
@@ -319,12 +316,6 @@
     <ClCompile Include="BaekjoonOnlineJudge_2242.cpp">
       <Filter>BaekjoonOnlineJudge</Filter>
     </ClCompile>
-    <ClCompile Include="NYPC_2023_Round_1_1.cpp">
-      <Filter>NYPC</Filter>
-    </ClCompile>
-    <ClCompile Include="NYPC_2023_Round_1_3.cpp">
-      <Filter>NYPC</Filter>
-    </ClCompile>
     <ClCompile Include="BaekjoonOnlineJudge_18352.cpp">
       <Filter>BaekjoonOnlineJudge</Filter>
     </ClCompile>
@@ -450,6 +441,19 @@
     </ClCompile>
     <ClCompile Include="BaekjoonOnlineJudge_18110.cpp">
       <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="BaekjoonOnlineJudge_18111.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_2178.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="프로그래머스_게임 맵 최단거리.cpp">
+      <Filter>프로그래머스</Filter>
+    </ClCompile>
+    <ClCompile Include="프로그래머스_단어 변환.cpp">
+      <Filter>프로그래머스</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,18 +1,18 @@
-#include <climits>
+#include <algorithm>
 #include <iostream>
 #include <queue>
 
 using namespace std;
 
 int main() {
-	priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> minRoad;
-	bool solved = false;
-	int n, m, k, x, a, b, curCity, curCityDist, nextCity, nextCityDist;
+	vector<int> kCities;
+	queue<int> minRoads;
+	int n, m, k, x, a, b, curCity, nextCity;
 
 	cin >> n >> m >> k >> x;
 
 	vector<vector<int>> roads(n + 1);
-	vector<int> minDists(n + 1, INT_MAX);
+	vector<int> minDists(n + 1, -1);
 
 	while (m--) {
 		cin >> a >> b;
@@ -20,37 +20,38 @@ int main() {
 		roads[a].push_back(b);
 	}
 
-	minRoad.push({ x, 0 });
+	minRoads.push(x);
 
 	minDists[x] = 0;
 
-	while (!minRoad.empty()) {
-		curCity = minRoad.top().first;
-		curCityDist = minRoad.top().second;
+	while (!minRoads.empty()) {
+		curCity = minRoads.front();
 
-		minRoad.pop();
+		minRoads.pop();
 
 		for (auto road : roads[curCity]) {
 			nextCity = road;
-			nextCityDist = curCityDist + 1;
 
-			if (nextCityDist < minDists[nextCity]) {
-				minDists[nextCity] = nextCityDist;
+			if (minDists[nextCity] == -1) {
+				minRoads.push(nextCity);
 
-				minRoad.push({ nextCity, nextCityDist });
+				minDists[nextCity] = minDists[curCity] + 1;
+
+				if (minDists[nextCity] == k) {
+					kCities.push_back(nextCity);
+				}
 			}
 		}
 	}
 
-	for (int i = 1; i <= n; ++i) {
-		if (minDists[i] == k) {
-			solved = true;
+	sort(kCities.begin(), kCities.end());
 
-			cout << i << '\n';
-		}
-	}
-
-	if (!solved) {
+	if (kCities.empty()) {
 		cout << -1;
+	}
+	else {
+		for (auto kCity : kCities) {
+			cout << kCity << '\n';
+		}
 	}
 }

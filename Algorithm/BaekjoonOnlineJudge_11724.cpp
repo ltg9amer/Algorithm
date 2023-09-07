@@ -4,15 +4,15 @@
 using namespace std;
 
 vector<vector<int>> graph;
-vector<bool> visited;
+vector<bool> distances;
 
 void back_tracking(int cur) {
-	visited[cur] = true;
+	distances[cur] = true;
 
 	for (int i = 0; i < graph[cur].size(); ++i) {
 		int next = graph[cur][i];
 
-		if (!visited[next]) {
+		if (!distances[next]) {
 			back_tracking(next);
 		}
 	}
@@ -24,7 +24,7 @@ int main() {
 	cin >> n >> m;
 
 	graph.resize(n + 1);
-	visited.resize(n + 1);
+	distances.resize(n + 1);
 
 	for (int i = 0; i < m; ++i) {
 		cin >> u >> v;
@@ -34,7 +34,7 @@ int main() {
 	}
 
 	for (int i = 1; i <= n; ++i) {
-		if (!visited[i]) {
+		if (!distances[i]) {
 			ccCnt++;
 			back_tracking(i);
 		}

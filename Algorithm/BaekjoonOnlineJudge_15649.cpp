@@ -3,7 +3,7 @@
 
 using namespace std;
 
-vector<bool> visited;
+vector<bool> distances;
 vector<int> seq;
 int n, m;
 
@@ -17,13 +17,13 @@ void back_tracking(int curNode) {
 	}
 	else {
 		for (int i = 0; i < n; ++i) {
-			if (!visited[i]) {
-				visited[i] = true;
+			if (!distances[i]) {
+				distances[i] = true;
 				seq[curNode] = i + 1;
 
 				back_tracking(curNode + 1);
 
-				visited[i] = false;
+				distances[i] = false;
 			}
 		}
 	}
@@ -32,7 +32,7 @@ void back_tracking(int curNode) {
 int main() {
 	cin >> n >> m;
 
-	visited.resize(n);
+	distances.resize(n);
 	seq.resize(n);
 	back_tracking(0);
 }
