@@ -464,5 +464,14 @@
     <ClCompile Include="프로그래머스_네트워크.cpp">
       <Filter>프로그래머스</Filter>
     </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_5635.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_11047.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_11655.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
