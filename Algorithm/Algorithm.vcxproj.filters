@@ -482,5 +482,14 @@
     <ClCompile Include="BaekjoonOnlineJudge_11170.cpp">
       <Filter>BaekjoonOnlineJudge</Filter>
     </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_28278.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_12789.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_28279.cpp">
+      <Filter>BaekjoonOnlineJudge</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
