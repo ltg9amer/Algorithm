@@ -4,12 +4,11 @@
 using namespace std;
 
 int main() {
-	vector<int> a;
 	int n, k, coinCnt = 0;
 
 	cin >> n >> k;
 
-	a.resize(n);
+	vector<int> a(n);
 
 	for (int i = 0; i < n; ++i) {
 		cin >> a[i];

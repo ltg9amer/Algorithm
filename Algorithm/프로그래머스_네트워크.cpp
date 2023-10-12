@@ -4,14 +4,14 @@
 using namespace std;
 
 vector<vector<int>> globalComputers;
-vector<bool> visited;
+vector<bool> parent;
 int globalN, networkCnt;
 
 void dfs(int curCom) {
-	visited[curCom] = true;
+	parent[curCom] = true;
 
 	for (int i = 0; i < globalN; ++i) {
-		if (globalComputers[curCom][i] && !visited[i]) {
+		if (globalComputers[curCom][i] && !parent[i]) {
 			dfs(i);
 		}
 	}
@@ -21,10 +21,10 @@ int solution(int n, vector<vector<int>> computers) {
 	globalComputers = computers;
 	globalN = n;
 
-	visited.resize(n);
+	parent.resize(n);
 
 	for (int i = 0; i < n; ++i) {
-		if (!visited[i]) {
+		if (!parent[i]) {
 			dfs(i);
 
 			networkCnt++;
