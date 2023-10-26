@@ -8,11 +8,11 @@ int solution(vector<vector<string>> clothes) {
 	unordered_map<string, int> types;
 	int caseCount = 1;
 
-	for (auto cloth : clothes) {
+	for (auto& cloth : clothes) {
 		types[cloth.back()]++;
 	}
 
-	for (auto type : types) {
+	for (auto& type : types) {
 		caseCount *= type.second + 1;
 	}
 

@@ -504,6 +504,12 @@
       <Filter>프로그래머스</Filter>
     </ClCompile>
     <ClCompile Include="프로그래머스_의상.cpp">
+      <Filter>프로그래머스</Filter>
+    </ClCompile>
+    <ClCompile Include="프로그래머스_베스트앨범.cpp">
+      <Filter>프로그래머스</Filter>
+    </ClCompile>
+    <ClCompile Include="BaekjoonOnlineJudge_9375.cpp">
       <Filter>BaekjoonOnlineJudge</Filter>
     </ClCompile>
   </ItemGroup>
