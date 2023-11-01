@@ -6,37 +6,28 @@
 using namespace std;
 
 vector<int> solution(vector<string> genres, vector<int> plays) {
-	unordered_map<string, int> totalPlays;
-	vector<tuple<int, int, string>> songs;
+	unordered_map<string, pair<int, vector<pair<int, int>>>> genreDatas;
 	vector<int> bestAlbum;
 
 	for (int i = 0; i < genres.size(); ++i) {
-		totalPlays[genres[i]] += plays[i];
+		genreDatas[genres[i]].first += plays[i];
 
-		songs.push_back({ -plays[i], i, genres[i] });
+		genreDatas[genres[i]].second.push_back({ -plays[i], i });
 	}
 
-	vector<pair<string, int>> genresByPlays(totalPlays.begin(), totalPlays.end());
+	vector<pair<string, pair<int, vector<pair<int, int>>>>> genreDatasByPlay(genreDatas.begin(), genreDatas.end());
 
-	sort(songs.begin(), songs.end());
-	sort(genresByPlays.begin(), genresByPlays.end(), [](pair<string, int> first, pair<string, int> second) {
-		return first.second > second.second;
+	sort(genreDatasByPlay.begin(), genreDatasByPlay.end(), [](pair<string, pair<int, vector<pair<int, int>>>>& first, pair<string, pair<int, vector<pair<int, int>>>>& second) {
+		return first.second.first > second.second.first;
 		});
 
-	for (auto& genre : genresByPlays) {
-		bool existOne = false;
+	for (auto& genreData : genreDatasByPlay) {
+		sort(genreData.second.second.begin(), genreData.second.second.end());
 
-		for (auto& song : songs) {
-			if (get<2>(song) == genre.first) {
-				bestAlbum.push_back(get<1>(song));
+		bestAlbum.push_back(genreData.second.second.front().second);
 
-				if (existOne) {
-					break;
-				}
-				else {
-					existOne = true;
-				}
-			}
+		if (genreData.second.second.size() > 1) {
+			bestAlbum.push_back(genreData.second.second[1].second);
 		}
 	}
 
