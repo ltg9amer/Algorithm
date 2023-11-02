@@ -17,7 +17,7 @@ vector<int> solution(vector<string> genres, vector<int> plays) {
 
 	vector<pair<string, pair<int, vector<pair<int, int>>>>> genreDatasByPlay(genreDatas.begin(), genreDatas.end());
 
-	sort(genreDatasByPlay.begin(), genreDatasByPlay.end(), [](pair<string, pair<int, vector<pair<int, int>>>>& first, pair<string, pair<int, vector<pair<int, int>>>>& second) {
+	sort(genreDatasByPlay.begin(), genreDatasByPlay.end(), [](auto& first, auto& second) {
 		return first.second.first > second.second.first;
 		});
 
