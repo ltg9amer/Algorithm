@@ -527,5 +527,8 @@
     <ClCompile Include="BaekjoonOnlineJudge_7795.cpp">
       <Filter>BaekjoonOnlineJudge</Filter>
     </ClCompile>
+    <ClCompile Include="프로그래머스_입국심사.cpp">
+      <Filter>프로그래머스</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

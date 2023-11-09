@@ -1,5 +1,6 @@
+#include <algorithm>
 #include <iostream>
-#include <map>
+#include <vector>
 
 using namespace std;
 
@@ -8,21 +9,22 @@ int main() {
 	cin.tie(nullptr);
 	cout.tie(nullptr);
 
-	map<int, int> cards;
-	int n, m;
+	int n, m, countingCard;
 
 	cin >> n;
 
-	for (int i = 0; i < n; ++i) {
-		cin >> m;
+	vector<int> cards(n);
 
-		cards[m]++;
+	for (auto& card : cards) {
+		cin >> card;
 	}
+
+	sort(cards.begin(), cards.end());
 
 	cin >> m;
 
-	for (int i = 0; i < m; ++i) {
-		cin >> n;
-		cout << cards[n] << ' ';
+	while (m--) {
+		cin >> countingCard;
+		cout << upper_bound(cards.begin(), cards.end(), countingCard) - lower_bound(cards.begin(), cards.end(), countingCard) << ' ';
 	}
 }

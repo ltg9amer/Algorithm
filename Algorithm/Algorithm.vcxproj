@@ -527,6 +527,7 @@
     <ClCompile Include="프로그래머스_의상.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="프로그래머스_입국심사.cpp" />
     <ClCompile Include="프로그래머스_중복된 문자 제거.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
