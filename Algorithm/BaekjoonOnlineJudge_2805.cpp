@@ -9,7 +9,7 @@ int main() {
 	cin.tie(nullptr);
 	cout.tie(nullptr);
 
-	long n, m, minCutHeight = 1, maxCutHeight = 0, cutHeight, cuttedWood, sawbladeHeight = 0;
+	long n, m, minCutHeight = 1, maxCutHeight = 0, cutHeight, cuttedWood;
 
 	cin >> n >> m;
 
@@ -23,25 +23,20 @@ int main() {
 
 	while (minCutHeight <= maxCutHeight) {
 		cuttedWood = 0;
-		cutHeight = (minCutHeight + maxCutHeight) / 2;
+		cutHeight = (minCutHeight + maxCutHeight) * 0.5;
 
 		for (auto& treeHeight : treeHeights) {
 			if (treeHeight > cutHeight) {
 				cuttedWood += treeHeight - cutHeight;
 			}
-		}
 
-		if (cuttedWood >= m) {
-			minCutHeight = cutHeight + 1;
-
-			if (cutHeight > sawbladeHeight) {
-				sawbladeHeight = cutHeight;
+			if (cuttedWood >= m) {
+				break;
 			}
 		}
-		else {
-			maxCutHeight = cutHeight - 1;
-		}
+
+		cuttedWood >= m ? minCutHeight = cutHeight + 1 : maxCutHeight = cutHeight - 1;
 	}
 
-	cout << sawbladeHeight;
+	cout << maxCutHeight;
 }
