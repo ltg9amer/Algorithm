@@ -22,8 +22,8 @@ int main() {
 	}
 
 	while (minCutHeight <= maxCutHeight) {
-		cuttedWood = 0;
 		cutHeight = (minCutHeight + maxCutHeight) * 0.5;
+		cuttedWood = 0;
 
 		for (auto& treeHeight : treeHeights) {
 			if (treeHeight > cutHeight) {

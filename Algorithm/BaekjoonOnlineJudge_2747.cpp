@@ -3,18 +3,18 @@
 
 using namespace std;
 
-vector<int> memo;
+vector<int> recursiveMemo;
 
 int fibonacci(int n) {
 	if (n <= 1) {
 		return n;
 	}
 
-	if (memo[n]) {
-		return memo[n];
+	if (recursiveMemo[n]) {
+		return recursiveMemo[n];
 	}
 	else {
-		return memo[n] = fibonacci(n - 1) + fibonacci(n - 2);
+		return recursiveMemo[n] = fibonacci(n - 1) + fibonacci(n - 2);
 	}
 }
 
@@ -23,7 +23,7 @@ int main() {
 
 	cin >> n;
 
-	memo.resize(n + 1);
+	recursiveMemo.resize(n + 1);
 
 	cout << fibonacci(n);
 }
