@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	int n, k, coinCnt = 0;
+	int n, k, coinCount = 0;
 
 	cin >> n >> k;
 
@@ -16,7 +16,7 @@ int main() {
 
 	for (int i = n - 1; i >= 0; --i) {
 		if (k >= a[i]) {
-			coinCnt += k / a[i];
+			coinCount += k / a[i];
 			k -= k / a[i] * a[i];
 		}
 
@@ -25,5 +25,5 @@ int main() {
 		}
 	}
 
-	cout << coinCnt;
+	cout << coinCount;
 }
