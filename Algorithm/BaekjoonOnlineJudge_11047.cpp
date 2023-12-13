@@ -17,7 +17,7 @@ int main() {
 	for (int i = n - 1; i >= 0; --i) {
 		if (k >= a[i]) {
 			coinCount += k / a[i];
-			k -= k / a[i] * a[i];
+			k %= a[i];
 		}
 
 		if (!k) {
